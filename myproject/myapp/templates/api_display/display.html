@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Data Display</title>
+  </head>
+  <body>
+    <h1>Data from API</h1>
+    <ul>
+      <li><strong>Error:</strong> {{ data.error }}</li>
+      <li><strong>Category:</strong> {{ data.category }}</li>
+      <li><strong>Type:</strong> {{ data.type }}</li>
+      <li><strong>Setup:</strong> {{ data.setup }}</li>
+      <li><strong>Delivery:</strong> {{ data.delivery }}</li>
+      <li><strong>Safe:</strong> {{ data.safe }}</li>
+      <li><strong>ID:</strong> {{ data.id }}</li>
+      <li><strong>Language:</strong> {{ data.lang }}</li>
+
+      <li>
+        <strong>Flags:</strong>
+        <ul>
+          <li><strong>NSFW:</strong> {{ data.flags.nsfw }}</li>
+          <li><strong>Religious:</strong> {{ data.flags.religious }}</li>
+          <li><strong>Political:</strong> {{ data.flags.political }}</li>
+          <li><strong>Racist:</strong> {{ data.flags.racist }}</li>
+          <li><strong>Sexist:</strong> {{ data.flags.sexist }}</li>
+          <li><strong>Explicit:</strong> {{ data.flags.explicit }}</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
